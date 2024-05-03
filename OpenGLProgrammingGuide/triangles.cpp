@@ -23,8 +23,8 @@ void init(void) {
 	glCreateBuffers(NumBuffers, Buffers);
 	glNamedBufferStorage(Buffers[ArrayBuffer], sizeof(vertices), vertices, 0);
 	ShaderInfo shaders[] = {
-		{GL_VERTEX_SHADER, "triangles.vert"},
-		{GL_FRAGMENT_SHADER, "triangles.frag"},
+		{GL_VERTEX_SHADER, "shaders/triangles.vert"},
+		{GL_FRAGMENT_SHADER, "shaders/triangles.frag"},
 		{GL_NONE, NULL}
 	};
 	GLuint program = LoadShaders(shaders);
